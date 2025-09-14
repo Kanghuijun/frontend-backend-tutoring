@@ -58,7 +58,7 @@ export class PostController {
     const data = await this.postService.findOne(+id);
     // 데이터가 없을 때 404 응답
     if (!data) {
-      res.status(404).json({ message: 'Post not found' });
+      res.status(404).json({ message: 'Post not found' }); //이러면 밑에도 실행되지 않나 return 혹은 에러표시throw 필요
     }
     res.status(200).json({
       message: 'Post retrieved successfully',

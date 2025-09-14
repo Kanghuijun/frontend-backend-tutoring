@@ -24,7 +24,7 @@ export class PostService {
 
   async update(id: number, updatePostDto: UpdatePostDto) {
     await this.postRepository.update(id, updatePostDto);
-    return await this.postRepository.findOneBy({ id });
+    return await this.postRepository.findOneBy({ id }); //여기선 필요 없는 코드
   }
 
   async remove(id: number) {

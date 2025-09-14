@@ -27,13 +27,14 @@ Frontend (UI): Vite React로 간단한 CRUD UI 구현 후 Backend 연동하기
 Infra: Docker Compose로 여러 서비스를 동시에 실행하는 방법 익히기
 
 📂 Project Structure
+```bash
 frontBackTutor/
  ├── backend/          # NestJS Backend (Post CRUD API)
  ├── frontend/         # TypeScript React Frontend
  ├── react-frontend/   # Vite-based React Frontend
  ├── docker-compose.yml
  └── README.md
-
+```
 🌐 Access
 Backend API → http://localhost:3000/post
 
